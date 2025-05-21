@@ -8,7 +8,7 @@ var logger = require('morgan');
 var app = express();
 
 app.use(session({
-  secret: 'DIEGON',
+  secret: 'DIEGONPe',
   resave: false,
   saveUninitialized: true,
 }));
