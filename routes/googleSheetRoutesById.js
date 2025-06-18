@@ -88,6 +88,7 @@ async function getData(spreadsheetId) {
                 const dateData = responses
                     .filter((response) => response) // Eliminar valores vacíos
                     .map((response) => {
+
                         // Suponiendo que la fecha tiene formato 'DD/MM/YYYY HH:MM:SS'
                         const [day, month, yearAndTime] = response.split('/');
                         const [year, time] = yearAndTime.split(' ');
